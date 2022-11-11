@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html> 
+    <head> <title> Ejercicio de Introduccion a HTML en Open Bootcamp </title></head>
+    <body> 
+        <div> 
+            <p> Este es mi primer codigo de dos lineas</p>
+            <p> Aprendiendo a documentar mi codigo en OpenBootcamp</p>
+        </div>
+        <!--Este es mi primer codigo de dos lineas -->
+        <!-- Aprendiendo a documentar mi codigo de OpenBootcamp-->
+        <div> 
+            <h2> Videos favoritos de YouTube </h2>
+            <ul> 
+                <li> <a href="https://www.youtube.com/watch?v=5USA115EqKg"> Chayanne sus mejores exitos</a></li>
+                <li> <a href="https://www.youtube.com/watch?v=6mqBINIbeHI"> Mario Luis, los mejores temas</a> </li>
+                <li> <a href=" https://www.youtube.com/watch?v=5uicWUGODSQ"> Lo mejor del leon Leo Mattioli </a></li>
+            </ul>
+        </div>
+    </body>
+
+</html>
