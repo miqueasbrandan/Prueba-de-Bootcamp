@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Ejercicio 02/2 - Tablas en HTML</title>
+    </head>
+    <body> 
+        <h3> libros favoritos </h3>
+        <table> 
+            <tr> 
+                <th> Título </th>
+                <th> autor </th>
+                <th> Año de Publicación </th>
+                <th> Enlace a Amazon</th>
+            </tr>
+            <tr>
+                <td> Crónica de una Muerte Anunciada </td>
+                <td> Gabriel García Márquez</td>
+                <td> 1981</td>
+                <td> <a href=" https://www.amazon.com/-/es/Gabriel-Garc%C3%ADa-M%C3%A1rquez/dp/8497592433" > Link Aquí </a> </td>
+    </tr>
+    <tr>
+        <td> El Túnel </td>
+        <td> Ernesto Sábato</td>
+        <td> 1948</td>
+        <td> <a href=" https://www.amazon.com/Tunel-Tunnel-Spanish-Ernesto-Sabato/dp/8432216429" > Link Aquí </a> </td>
+</tr>
+<tr>
+    <td> El Aleph </td>
+    <td> Jorge Luis Borges</td>
+    <td> 1949</td>
+    <td> <a href=" https://www.amazon.com/-/es/Jorge-Luis-Borges/dp/8499089518" > Link Aquí </a> </td>
+    </body>
+</html>
