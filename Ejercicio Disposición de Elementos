@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disposición de elementos en CSS</title>
+    <link rel="stylesheet" href="dispocisionDeElementosEnCSS.css">
+</head>
+<body>
+    <img class= "imagen-principal" src="https://media-cdn.tripadvisor.com/media/photo-s/13/2b/cc/de/el-cristo-bendicente.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Fotos de Yerba Buena - Imágenes de Yerba Buena, Provincia de ..." data-noaft="1" style="width: 349px; height: 195.44px; margin: 1.13px 0px;">
+<div class="galeria"> 
+<img class="imagen-galeria" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/0206-16sep2018.jpg/250px-0206-16sep2018.jpg" alt="imagen1" />
+<img class="imagen-galeria" src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1020,h_765/https://aycrevista.com.ar/wp-content/uploads/2022/09/Yerba-Buena-09-1020x765.jpg" alt="imagen2" />
+<img class="imagen-galeria" src="https://www.hjyerbabuena.com.ar/zd_admin/UPLOADS/t1/2019-02-13-123640__yb4.jpg" alt="imagen3" />
+<img class="imagen-galeria" src="https://tripin.travel/wp-content/uploads/tripincdn/minis/tucuman/San-Miguel-de-Tucuman/yerba-buena.jpg" alt="imagen4" />
+<img class="imagen-galeria" src="https://www.tucumanturismo.gob.ar/carga/image/yerbabuena002.jpg" alt="imagen5" />
+
+
+</div>
+</body>
+</html>
+
+
+/*Y en CSS quedaría de la siguiente manera */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.imagen-principal {
+    width: 100vw;
+    opacity: 0.5;
+}
+.imagen-principal:hover{
+    opacity: 1;
+}
+
+.galeria {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.imagen-galeria {
+width: 300px;
+}
+
+.imagen-galeria:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
