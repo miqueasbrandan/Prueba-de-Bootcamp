@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login formulario</title>
+    <link rel="stylesheet" href="loginformulario.css">
+</head>
+<body>
+    <div class="conteiner"> 
+        <h3> Registrate en los formularios </h3>
+        <div class="botones"> 
+            <button class="google-btn">
+                <picture> 
+                    <img src="https://cdn.cdnlogo.com/logos/g/35/google-icon.svg" alt="logo-google"/>
+                </picture>
+            <span> Registrarse con Google</span>
+            </button>
+            <button class="twitter-btn"> 
+                <picture> T </picture>
+            </button>
+        </div>
+<div class="separator"> 
+    <hr> <span> O...</span> <hr>
+</div>
+
+<form action="" method=""> 
+    <div class="section-imputs" > 
+        <label for="name">
+            <span> Name</span>
+            <input id="name" name="name"/>
+        </label>
+        <label for="username">
+            <span> Username</span>
+            <input id="username" name="username"/>
+        </label>
+        <label for="email">
+            <span> Email</span>
+            <input id="email" name="email"/>
+        </label>
+        <label for="password">
+            <span> Password</span>
+            <input  type="password" id="password" name="password" placeholder="6+Character"/>
+        </label>
+        <label for="checkbox" class="checkbox-label">
+            <input type="checkbox" id="checkbox">
+            <span> Acepto las condiciones y el aviso legal</span>
+        </label>
+        <button type="submit" class="submit-btn"> 
+            Crear Cuenta
+        </button>
+    </div>
+</form>
+        </div>
+    
+</body>
+</html>
+
+/* Aquí pongo el CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    color:white;
+}
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 450px;
+    margin:auto;
+    background-color: #161717;
+}
+.google-btn {
+    background-color: #1A73EB;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor:pointer;
+}
+.google-btn span {
+    color:white;
+    font-weight: 500;
+    padding: 15px;
+
+}
+.google-btn picture img {
+    width: 75%;
+}
+.botones {
+    align-items: center;
+    align-self: center;
+    display:flex;
+    gap: 15px;
+}
+.google-btn:hover{
+    opacity: 0.75;
+}
+.google-btn picture {
+    height: 34px;
+    width: 34px;
+    background-color: white;
+    padding: 2px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.twitter-btn {
+    color:#bbb;
+    background-color: #eee;
+    border: none;
+    width: 35px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.twitter-btn:hover {
+    background-color: #ddd;
+}
+
+.separator {
+    display: flex;
+    width: 100%;
+    gap:15px;
+}
+.separator hr {
+flex-grow: 1;
+border: none;
+border-top: 1px solid #ccc;
+}
+.separator span {
+    color:#ccc;
+}
+
+.section-inputs {
+    display:flex;
+    gap: 10px;
+    width: 100%;
+}
+label {
+    
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+label span {
+    font-weight: 700;
+}
+label input {
+    width: 100%;
+    background-color: #212121;
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+label input:hover {
+    background-color:#454045;
+    border: solid 1px #F3F3F4;
+    box-shadow: 0 0 4px #c74e9d;
+}
+label input:focus {
+    background-color: #454045;
+    border: solid 1px #F3F3F4;
+    box-shadow: 0 0 4px #c74e9d;
+}
+.checkbox-label {
+    display: flex;
+    flex-direction: row;
+}
+.checkbox-label input[type="checkbox"] {
+    width:20px; 
+}
+    .checkbox-label span {
+        font-weight: 400;
+        color:white;
+    }
+    .submit-btn {
+        background-color: #ea20a3;
+        color:white;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        cursor:pointer;
+
+    }
+    .submit-btn:hover {
+        opacity:0.75;
+
+    }
