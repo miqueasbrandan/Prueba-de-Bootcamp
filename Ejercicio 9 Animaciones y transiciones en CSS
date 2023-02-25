@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones y transiciones en CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <button class="btn-modern">Haz hover sobre mí</button>
+</body>
+</html>
+
+/*y el CSS para aplicar será el siguiente*/
+.btn-modern {
+    background-color: #2196F3;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+  }
+  
+  .btn-modern:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    background-color: #cfd219;
+    color: #000000;
+  }
